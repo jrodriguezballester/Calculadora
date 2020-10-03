@@ -1,0 +1,12 @@
+C:\Users\joser\source\repos\Calculadora2\bin\Debug\Calculadora2.exe.config
+C:\Users\joser\source\repos\Calculadora2\bin\Debug\Calculadora2.exe
+C:\Users\joser\source\repos\Calculadora2\bin\Debug\Calculadora2.pdb
+C:\Users\joser\source\repos\Calculadora2\bin\Debug\Calculadora2.xml
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.vbprojAssemblyReference.cache
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.Form1.resources
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.Resources.resources
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.vbproj.GenerateResource.cache
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.vbproj.CoreCompileInputs.cache
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.exe
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.xml
+C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.pdb
