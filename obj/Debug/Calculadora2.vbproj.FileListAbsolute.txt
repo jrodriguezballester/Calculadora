@@ -10,3 +10,15 @@ C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.vbproj.CoreCompi
 C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.exe
 C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.xml
 C:\Users\joser\source\repos\Calculadora2\obj\Debug\Calculadora2.pdb
+D:\proyectosVB\Calculadora\bin\Debug\Calculadora2.exe.config
+D:\proyectosVB\Calculadora\bin\Debug\Calculadora2.exe
+D:\proyectosVB\Calculadora\bin\Debug\Calculadora2.pdb
+D:\proyectosVB\Calculadora\bin\Debug\Calculadora2.xml
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.vbprojAssemblyReference.cache
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.Form1.resources
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.Resources.resources
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.vbproj.GenerateResource.cache
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.vbproj.CoreCompileInputs.cache
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.exe
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.xml
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.pdb

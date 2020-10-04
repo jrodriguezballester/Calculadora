@@ -6,6 +6,7 @@
     Private pendienteOperacion As Boolean
     Private resultado As String
     Private pulsado As Boolean
+    Private porcentaje As Boolean
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Concatenar()
@@ -109,7 +110,12 @@
 
     Private Sub CalcularOperacion()
         'Calcula la operacion  
-        segundoOperando = Display.Text
+        If porcentaje Then
+            segundoOperando = primerOperando * Display.Text / 100
+        Else
+            segundoOperando = Display.Text
+        End If
+
         Select Case operacion
             Case "+"
                 resultado = primerOperando + segundoOperando
@@ -123,12 +129,15 @@
                 Else
                     resultado = primerOperando / segundoOperando
                 End If
+            Case Else
+                resultado = segundoOperando
         End Select
         Display.Text = resultado
         ' y ademas
         primerOperando = Nothing
         segundoOperando = Nothing
         pendienteOperacion = False
+        porcentaje = False
 
     End Sub
 
@@ -160,5 +169,35 @@
         Dim operador = "+"
         pulsado = True
         GuardarOperacion(operador)
+    End Sub
+
+    Private Sub ButtonMasMenos_Click(sender As Object, e As EventArgs) Handles ButtonMasMenos.Click
+        Display.Text = -Display.Text
+    End Sub
+
+    Private Sub Button_CE_Click(sender As Object, e As EventArgs) Handles Button_CE.Click
+        If Display.Text.Length > 0 Then
+            Display.Text = Display.Text.Substring(0, Display.Text.Length - 1)
+        End If
+    End Sub
+
+    Private Sub ButtonInversa_Click(sender As Object, e As EventArgs) Handles ButtonInversa.Click
+        Display.Text = 1 / Display.Text
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim culture As New System.Globalization.CultureInfo("es-ES")
+        culture.NumberFormat.NumberDecimalSeparator = "."
+        System.Threading.Thread.CurrentThread.CurrentCulture = culture
+    End Sub
+
+    Private Sub ButtonPorcentaje_Click(sender As Object, e As EventArgs) Handles ButtonPorcentaje.Click
+        ' pendiente operacion debe ser true
+        If pendienteOperacion Then
+            porcentaje = True
+            CalcularOperacion()
+        End If
+
+
     End Sub
 End Class

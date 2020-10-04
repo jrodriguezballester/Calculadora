@@ -38,12 +38,12 @@ Partial Class Form1
         Me.ButtonMultiplicacion = New System.Windows.Forms.Button()
         Me.ButtonResta = New System.Windows.Forms.Button()
         Me.ButtonIgual = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
+        Me.ButtonPorcentaje = New System.Windows.Forms.Button()
+        Me.ButtonMasMenos = New System.Windows.Forms.Button()
+        Me.Button_CE = New System.Windows.Forms.Button()
         Me.Display = New System.Windows.Forms.TextBox()
-        Me.DisplayMemoria = New System.Windows.Forms.Label()
         Me.ButtonSumar = New System.Windows.Forms.Button()
+        Me.ButtonInversa = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -147,9 +147,9 @@ Partial Class Form1
         '
         'Button_C
         '
-        Me.Button_C.Location = New System.Drawing.Point(234, 333)
+        Me.Button_C.Location = New System.Drawing.Point(321, 263)
         Me.Button_C.Name = "Button_C"
-        Me.Button_C.Size = New System.Drawing.Size(65, 52)
+        Me.Button_C.Size = New System.Drawing.Size(88, 52)
         Me.Button_C.TabIndex = 11
         Me.Button_C.Text = "C"
         Me.Button_C.UseVisualStyleBackColor = True
@@ -157,7 +157,7 @@ Partial Class Form1
         'ButtonDivision
         '
         Me.ButtonDivision.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDivision.Location = New System.Drawing.Point(321, 333)
+        Me.ButtonDivision.Location = New System.Drawing.Point(430, 189)
         Me.ButtonDivision.Name = "ButtonDivision"
         Me.ButtonDivision.Size = New System.Drawing.Size(88, 52)
         Me.ButtonDivision.TabIndex = 15
@@ -167,7 +167,7 @@ Partial Class Form1
         'ButtonMultiplicacion
         '
         Me.ButtonMultiplicacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMultiplicacion.Location = New System.Drawing.Point(321, 263)
+        Me.ButtonMultiplicacion.Location = New System.Drawing.Point(430, 115)
         Me.ButtonMultiplicacion.Name = "ButtonMultiplicacion"
         Me.ButtonMultiplicacion.Size = New System.Drawing.Size(88, 52)
         Me.ButtonMultiplicacion.TabIndex = 14
@@ -187,59 +187,50 @@ Partial Class Form1
         'ButtonIgual
         '
         Me.ButtonIgual.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonIgual.Location = New System.Drawing.Point(430, 333)
+        Me.ButtonIgual.Location = New System.Drawing.Point(57, 405)
         Me.ButtonIgual.Name = "ButtonIgual"
-        Me.ButtonIgual.Size = New System.Drawing.Size(65, 52)
+        Me.ButtonIgual.Size = New System.Drawing.Size(461, 52)
         Me.ButtonIgual.TabIndex = 19
         Me.ButtonIgual.Text = "="
         Me.ButtonIgual.UseVisualStyleBackColor = True
         '
-        'Button18
+        'ButtonPorcentaje
         '
-        Me.Button18.Location = New System.Drawing.Point(430, 263)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(65, 52)
-        Me.Button18.TabIndex = 18
-        Me.Button18.Text = "MC"
-        Me.Button18.UseVisualStyleBackColor = True
+        Me.ButtonPorcentaje.Location = New System.Drawing.Point(430, 263)
+        Me.ButtonPorcentaje.Name = "ButtonPorcentaje"
+        Me.ButtonPorcentaje.Size = New System.Drawing.Size(88, 52)
+        Me.ButtonPorcentaje.TabIndex = 18
+        Me.ButtonPorcentaje.Text = "%"
+        Me.ButtonPorcentaje.UseVisualStyleBackColor = True
         '
-        'Button19
+        'ButtonMasMenos
         '
-        Me.Button19.Location = New System.Drawing.Point(430, 189)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(65, 52)
-        Me.Button19.TabIndex = 17
-        Me.Button19.Text = "MR"
-        Me.Button19.UseVisualStyleBackColor = True
+        Me.ButtonMasMenos.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMasMenos.Location = New System.Drawing.Point(234, 333)
+        Me.ButtonMasMenos.Name = "ButtonMasMenos"
+        Me.ButtonMasMenos.Size = New System.Drawing.Size(65, 52)
+        Me.ButtonMasMenos.TabIndex = 17
+        Me.ButtonMasMenos.Text = "±"
+        Me.ButtonMasMenos.UseVisualStyleBackColor = True
         '
-        'Button20
+        'Button_CE
         '
-        Me.Button20.Location = New System.Drawing.Point(430, 115)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(65, 52)
-        Me.Button20.TabIndex = 16
-        Me.Button20.Text = "M"
-        Me.Button20.UseVisualStyleBackColor = True
+        Me.Button_CE.Location = New System.Drawing.Point(321, 333)
+        Me.Button_CE.Name = "Button_CE"
+        Me.Button_CE.Size = New System.Drawing.Size(88, 52)
+        Me.Button_CE.TabIndex = 16
+        Me.Button_CE.Text = "CE"
+        Me.Button_CE.UseVisualStyleBackColor = True
         '
         'Display
         '
-        Me.Display.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Display.Location = New System.Drawing.Point(121, 63)
+        Me.Display.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Display.Location = New System.Drawing.Point(57, 47)
         Me.Display.Name = "Display"
-        Me.Display.Size = New System.Drawing.Size(373, 30)
+        Me.Display.Size = New System.Drawing.Size(461, 36)
         Me.Display.TabIndex = 20
         Me.Display.Text = "0"
         Me.Display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'DisplayMemoria
-        '
-        Me.DisplayMemoria.AutoSize = True
-        Me.DisplayMemoria.Location = New System.Drawing.Point(54, 63)
-        Me.DisplayMemoria.Name = "DisplayMemoria"
-        Me.DisplayMemoria.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.DisplayMemoria.Size = New System.Drawing.Size(19, 17)
-        Me.DisplayMemoria.TabIndex = 22
-        Me.DisplayMemoria.Text = "M"
         '
         'ButtonSumar
         '
@@ -251,18 +242,27 @@ Partial Class Form1
         Me.ButtonSumar.Text = "+"
         Me.ButtonSumar.UseVisualStyleBackColor = True
         '
+        'ButtonInversa
+        '
+        Me.ButtonInversa.Location = New System.Drawing.Point(430, 334)
+        Me.ButtonInversa.Name = "ButtonInversa"
+        Me.ButtonInversa.Size = New System.Drawing.Size(88, 52)
+        Me.ButtonInversa.TabIndex = 24
+        Me.ButtonInversa.Text = "1/x"
+        Me.ButtonInversa.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(531, 450)
+        Me.ClientSize = New System.Drawing.Size(559, 485)
+        Me.Controls.Add(Me.ButtonInversa)
         Me.Controls.Add(Me.ButtonSumar)
-        Me.Controls.Add(Me.DisplayMemoria)
         Me.Controls.Add(Me.Display)
         Me.Controls.Add(Me.ButtonIgual)
-        Me.Controls.Add(Me.Button18)
-        Me.Controls.Add(Me.Button19)
-        Me.Controls.Add(Me.Button20)
+        Me.Controls.Add(Me.ButtonPorcentaje)
+        Me.Controls.Add(Me.ButtonMasMenos)
+        Me.Controls.Add(Me.Button_CE)
         Me.Controls.Add(Me.ButtonDivision)
         Me.Controls.Add(Me.ButtonMultiplicacion)
         Me.Controls.Add(Me.ButtonResta)
@@ -301,10 +301,10 @@ Partial Class Form1
     Friend WithEvents ButtonMultiplicacion As Button
     Friend WithEvents ButtonResta As Button
     Friend WithEvents ButtonIgual As Button
-    Friend WithEvents Button18 As Button
-    Friend WithEvents Button19 As Button
-    Friend WithEvents Button20 As Button
+    Friend WithEvents ButtonPorcentaje As Button
+    Friend WithEvents ButtonMasMenos As Button
+    Friend WithEvents Button_CE As Button
     Friend WithEvents Display As TextBox
-    Friend WithEvents DisplayMemoria As Label
     Friend WithEvents ButtonSumar As Button
+    Friend WithEvents ButtonInversa As Button
 End Class
