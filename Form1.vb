@@ -150,46 +150,56 @@
     End Sub
 
 
-    Private Sub Operacion_un_operando_click(sender As Object, e As EventArgs) Handles ButtonMasMenos.Click, ButtonInversa.Click, ButtonFactorial.Click, ButtonCubo.Click, ButtonCuadrado.Click, Button13.Click, Button12.Click, Button11.Click, Button_CE.Click, Button_C.Click
+    Private Sub Operacion_un_operando_click(sender As Object, e As EventArgs) Handles ButtonMasMenos.Click, ButtonInversa.Click, ButtonFactorial.Click, ButtonCubo.Click, ButtonCuadrado.Click, Button13.Click, Button12.Click, Button11.Click, Button_CE.Click, Button_C.Click, Button14.Click
         Dim x = Display.Text
-        Select Case sender.text
-            Case "sen"
-                resultado = Math.Sin(x)
-            Case "cos"
-                resultado = Math.Cos(x)
-            Case "tan"
-                resultado = Math.Tan(x)
-            Case "±"
-                resultado = -resultado
-            Case "x^2"
-                resultado = Math.Pow(x, 2)
-            Case "x^3"
-                resultado = Math.Pow(x, 3)
-            Case "n!"
-                Dim operando As Integer
-                If (Integer.TryParse(Display.Text, operando)) Then
-                    operando = Display.Text
-                    If operando >= 0 Then
-                        resultado = 1
-                        For index = 2 To operando
-                            resultado = resultado * index
-                        Next
+        Dim numDouble As Double
+        resultado = 0
+        If Double.TryParse(Display.Text, numDouble) Then
+            Select Case sender.text
+                Case "sen"
+                    resultado = Math.Sin(x)
+                Case "cos"
+                    resultado = Math.Cos(x)
+                Case "tan"
+                    resultado = Math.Tan(x)
+                Case "±"
+                    resultado = -x
+                Case "x^2"
+                    resultado = Math.Pow(x, 2)
+                Case "x^3"
+                    resultado = Math.Pow(x, 3)
+                Case "n!"
+                    Dim operando As Integer
+                    If (Integer.TryParse(Display.Text, operando)) Then
+                        operando = Display.Text
+                        If operando >= 0 Then
+                            resultado = 1
+                            For index = 2 To operando
+                                resultado = resultado * index
+                            Next
+                        Else
+                            resultado = "Aun no se calcular ese factorial"
+                        End If
                     Else
                         resultado = "Aun no se calcular ese factorial"
                     End If
-                Else
-                    resultado = "Aun no se calcular ese factorial"
-                End If
-            Case "1/x"
-                resultado = 1 / resultado
-            Case "CE"
-                If Display.Text.Length > 0 Then
-                    resultado = Display.Text.Substring(0, Display.Text.Length - 1)
-                End If
-            Case "C"
-                resultado = 0
-
-        End Select
+                Case "1/x"
+                    resultado = 1 / resultado
+                Case "←"
+                    If Display.Text.Length > 0 Then
+                        resultado = Display.Text.Substring(0, Display.Text.Length - 1)
+                    End If
+                Case "CE"
+                    resultado = 0
+                Case "C"
+                    resultado = 0
+                    primerOperando = Nothing
+                    segundoOperando = Nothing
+                    pendienteOperacion = False
+                    porcentaje = False
+            End Select
+            'Display.Text = resultado
+        End If
         Display.Text = resultado
     End Sub
 End Class

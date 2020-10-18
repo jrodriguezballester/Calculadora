@@ -55,6 +55,7 @@ Partial Class Form1
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -181,11 +182,11 @@ Partial Class Form1
         '
         'Button_C
         '
-        Me.Button_C.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_C.Location = New System.Drawing.Point(297, 94)
+        Me.Button_C.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_C.Location = New System.Drawing.Point(17, 35)
         Me.Button_C.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_C.Name = "Button_C"
-        Me.Button_C.Size = New System.Drawing.Size(66, 42)
+        Me.Button_C.Size = New System.Drawing.Size(49, 42)
         Me.Button_C.TabIndex = 11
         Me.Button_C.Text = "C"
         Me.Button_C.UseVisualStyleBackColor = True
@@ -258,22 +259,22 @@ Partial Class Form1
         '
         'Button_CE
         '
-        Me.Button_CE.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_CE.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button_CE.Location = New System.Drawing.Point(297, 154)
         Me.Button_CE.Margin = New System.Windows.Forms.Padding(2)
         Me.Button_CE.Name = "Button_CE"
         Me.Button_CE.Size = New System.Drawing.Size(66, 42)
         Me.Button_CE.TabIndex = 16
-        Me.Button_CE.Text = "CE"
+        Me.Button_CE.Text = "←"
         Me.Button_CE.UseVisualStyleBackColor = True
         '
         'Display
         '
         Me.Display.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Display.Location = New System.Drawing.Point(17, 39)
+        Me.Display.Location = New System.Drawing.Point(83, 39)
         Me.Display.Margin = New System.Windows.Forms.Padding(2)
         Me.Display.Name = "Display"
-        Me.Display.Size = New System.Drawing.Size(346, 30)
+        Me.Display.Size = New System.Drawing.Size(280, 30)
         Me.Display.TabIndex = 20
         Me.Display.Text = "0"
         Me.Display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -407,11 +408,23 @@ Partial Class Form1
         Me.Button13.Text = "sen"
         Me.Button13.UseVisualStyleBackColor = True
         '
+        'Button14
+        '
+        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.Location = New System.Drawing.Point(297, 94)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(66, 42)
+        Me.Button14.TabIndex = 33
+        Me.Button14.Text = "CE"
+        Me.Button14.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 392)
+        Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Button13)
@@ -488,4 +501,5 @@ Partial Class Form1
     Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
 End Class
