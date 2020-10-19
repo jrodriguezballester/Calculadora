@@ -29,3 +29,11 @@ Añadir un menu para vista de calculadora cientifica con las operaciones x^2, x^
 1) Añadido boton eliminar último caracter haciendo la funcion que hacia CE
 2) Boton CE borra el display pero mantiene el primer operando y/o operacion si los hubiera
 3) Boton C Manda todos los parametros a sus valores por defecto
+
+## Version 4.0.2
+
+1) Añadido opcion ayuda en menu
+2) Ventana ayuda calculo del %
+3) Correcion del calculo del %
+
+![Screenshot](CaptAyuda.png)

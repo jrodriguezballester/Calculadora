@@ -62,6 +62,11 @@
         'Calcula la operacion  
         If porcentaje Then
             segundoOperando = primerOperando * Display.Text / 100
+
+            If operacion IsNot "+" And operacion IsNot "-" Then
+                operacion = ""
+            End If
+
         Else
             segundoOperando = Display.Text
         End If
@@ -201,5 +206,10 @@
             'Display.Text = resultado
         End If
         Display.Text = resultado
+    End Sub
+
+    Private Sub OperacionConToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OperacionConToolStripMenuItem.Click
+        Ayuda.Show()
+
     End Sub
 End Class
