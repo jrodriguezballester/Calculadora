@@ -23,3 +23,4 @@ D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.exe
 D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.xml
 D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.pdb
 D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.Ayuda.resources
+D:\proyectosVB\Calculadora\obj\Debug\Calculadora2.Ayuda2.resources

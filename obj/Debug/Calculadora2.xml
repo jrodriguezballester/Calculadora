@@ -22,5 +22,52 @@ Calculadora2
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="M:Calculadora2.Form1.Concatenar">
+ <summary>
+ Método para permitir concatenar texto (numeros) en el display
+ </summary>
+</member>
+<member name="M:Calculadora2.Form1.GuardarOperacion(System.String)">
+ <summary>
+ Si ya habia una operacion pendiente la calcula.
+ Guarda el primer operador (numero) 
+ </summary>
+ <param name="operador"></param>
+</member>
+<member name="M:Calculadora2.Form1.CalcularOperacion">
+ <summary>
+ Obtiene el segundo operador y realiza la operacion
+ </summary>
+</member>
+<member name="M:Calculadora2.Form1.Calculadora_Load(System.Object,System.EventArgs)">
+ <summary>
+ Inicio de la aplicacion
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Calculadora2.Form1.Numeros_click(System.Object,System.EventArgs)">
+ <summary>
+ Botones de los Numeros con el evento click
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Calculadora2.Form1.Operacion_dos_operandos_click(System.Object,System.EventArgs)">
+ <summary>
+ Metodo asignado a las operaciones que necesitan dos numeros como por ejemplo: a + b
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Calculadora2.Form1.Operacion_un_operando_click(System.Object,System.EventArgs)">
+ <summary>
+ Método asignado a los botones que solo necesitan un numero (o el display) por ejemplo: seno de x ;
+ dan el resultado en pantalla sin necesidad de apretar otro boton
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>
