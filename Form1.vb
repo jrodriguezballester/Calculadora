@@ -30,24 +30,11 @@
         End If
 
         'Despues de texto
-        If Display.Text = "Error Division por 0" Then
+        'controlamos cualquier texto 
+        Dim numDouble As Double
+        If Not Double.TryParse(Display.Text, numDouble) Then
             Display.Text = ""
         End If
-        If Display.Text = "No se ese factorial" Then
-            Display.Text = ""
-        End If
-        If Display.Text = "NaN" Then
-            Display.Text = ""
-        End If
-        If Display.Text = "∞" Then
-            Display.Text = ""
-        End If
-        ' posible codigo para controlar que sea cualquier texto, falta depurar no funciona correctamente
-        'Try
-        'Convert.ToDouble(Display.Text)
-        'Catch Ex As Exception
-        'Display.Text = ""
-        ' End Try
 
         'Despues de pulsar operador, igual,.... ==> pulsado=true
         If pulsado Then
@@ -56,12 +43,13 @@
         End If
 
     End Sub
-    ''' <summary>
+
+    ''' <summary>Guarda el primer operador sino es un numero guarda 0
     ''' Si ya habia una operacion pendiente la calcula.
-    ''' Guarda el primer operador (numero) 
+    ''' Guarda la operacion que ha llamado al metodo
     ''' </summary>
     ''' <param name="operador"></param>
-    Private Sub GuardarOperacion(operador As String)
+    Private Sub GuardarPrimerOperando(operador As String)
         If pendienteOperacion Then
             CalcularOperacion()
         End If
@@ -72,11 +60,11 @@
             Display.Text = 0
             primerOperando = Display.Text
         End Try
-        'Display.Text = ""
         pendienteOperacion = True
     End Sub
-    ''' <summary>
-    ''' Obtiene el segundo operador y realiza la operacion
+
+    ''' <summary> Calcula las operaciones que necesitan dos operandos
+    ''' Obtiene el segundo operador y realiza la operacion (caso expecial el %)
     ''' </summary>
     Private Sub CalcularOperacion()
         'Calcula la operacion  
@@ -85,9 +73,8 @@
             If operacion IsNot "+" And operacion IsNot "-" Then
                 operacion = ""
             End If
-
         Else
-            segundoOperando = Display.Text
+            Double.TryParse(Display.Text, segundoOperando)
         End If
 
         Select Case operacion
@@ -99,7 +86,7 @@
                 resultado = primerOperando * segundoOperando
             Case "/"
                 If segundoOperando = 0 Then
-                    resultado = "Error Division por 0"
+                    resultado = "error Division por 0"
                 Else
                     resultado = primerOperando / segundoOperando
                 End If
@@ -109,7 +96,7 @@
                 resultado = segundoOperando
         End Select
         Display.Text = resultado
-        ' y ademas
+        ' y ademas reinicializamos datos
         primerOperando = Nothing
         segundoOperando = Nothing
         pendienteOperacion = False
@@ -120,7 +107,6 @@
     Private Sub ButtonIgual_Click(sender As Object, e As EventArgs) Handles ButtonIgual.Click
         pulsado = True
         CalcularOperacion()
-
     End Sub
 
     ''' <summary>
@@ -129,17 +115,17 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Calculadora_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' ponemos un . como separador decimal
         Dim culture As New System.Globalization.CultureInfo("es-ES")
         culture.NumberFormat.NumberDecimalSeparator = "."
         System.Threading.Thread.CurrentThread.CurrentCulture = culture
         Size = New Size(330, 375)
-        'ButtonIgual.Size = New Size(225, 52)
         Label2.Hide()
         Label1.Hide()
     End Sub
 
     Private Sub ButtonPorcentaje_Click(sender As Object, e As EventArgs) Handles ButtonPorcentaje.Click
-        ' pendiente operacion debe ser true
+        ' pendiente operacion debe ser true para hacer los calculos, ver ayuda en aplicacion
         If pendienteOperacion Then
             porcentaje = True
             CalcularOperacion()
@@ -155,8 +141,9 @@
     Private Sub Opcion_cientifica_click(sender As Object, e As EventArgs) Handles CientificaToolStripMenuItem.Click
         Size = New Size(470, 375)
     End Sub
+
     ''' <summary>
-    ''' Botones de los Numeros con el evento click
+    ''' Insercion de los Numeros en el display
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
@@ -166,29 +153,27 @@
     End Sub
 
     ''' <summary>
-    ''' Metodo asignado a las operaciones que necesitan dos numeros como por ejemplo: a + b
-    ''' 
+    ''' Metodo asignado a los operadores que necesitan dos numeros como por ejemplo: a + b
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Operacion_dos_operandos_click(sender As Object, e As EventArgs) Handles ButtonX_ElevadoY.Click, ButtonSumar.Click, ButtonResta.Click, ButtonMultiplicacion.Click, ButtonDivision.Click
         Dim operador = sender.Text
         pulsado = True
-        GuardarOperacion(operador)
+        GuardarPrimerOperando(operador)
     End Sub
 
     ''' <summary>
-    ''' Método asignado a los botones que solo necesitan un numero (o el display) por ejemplo: seno de x ;
+    ''' Método asignado a los operadores que solo necesitan un numero por ejemplo: seno de x ;
     ''' dan el resultado en pantalla sin necesidad de apretar otro boton
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Operacion_un_operando_click(sender As Object, e As EventArgs) Handles ButtonMasMenos.Click, ButtonInversa.Click, ButtonFactorial.Click, ButtonCubo.Click, ButtonCuadrado.Click, Button13.Click, Button12.Click, Button11.Click, Button_CE.Click, Button_C.Click, Button14.Click, Button17.Click, Button16.Click, Button15.Click
 
-        Dim numDouble As Double
+        Dim x As Double
         resultado = 0
-        If Double.TryParse(Display.Text, numDouble) Then
-            Dim x = Display.Text
+        If Double.TryParse(Display.Text, x) Then
             Dim Xrad = x * (Math.PI / 180) ' Pasar a radianes para calculo trigonometrico
             Select Case sender.text
                 Case "sen"
@@ -219,14 +204,14 @@
                                 resultado = resultado * index
                             Next
                         Else
-                            resultado = "No se ese factorial"
+                            resultado = "No es natural"
                         End If
                     Else
-                        resultado = "No se ese factorial"
+                        resultado = "No es natural"
                     End If
                 Case "1/x"
                     If x = 0 Then
-                        resultado = "Error Division por 0"
+                        resultado = "error Division por 0"
                     Else
                         resultado = 1 / x
                     End If
@@ -249,15 +234,25 @@
         Display.Text = resultado
     End Sub
 
-    Private Sub OperacionConToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OperacionConToolStripMenuItem.Click
-        Ayuda.Show()
-    End Sub
-
-    Private Sub maxcaracter(sender As Object, e As EventArgs) Handles Display.TextChanged
-        If Display.TextLength > 17 Then
-            Label1.Show()
-            Label2.Show()
-            Label1.Text = Display.TextLength - 17
+    ''' <summary>
+    ''' Comprueba si el resultado entra en el display, Si el resultado contiene E (numeros muy pequeños)
+    ''' acorta el numero para que se pueda ver el exponente 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub Maxcaracter(sender As Object, e As EventArgs) Handles Display.TextChanged
+        Dim longitud = Display.Text.Length
+        Dim longDisplay = 17
+        If longitud > longDisplay Then
+            If Display.Text.Contains("E") Then
+                Dim pos = Display.Text.IndexOf("E")
+                Dim nuevoResultado = Display.Text.Remove(pos - (longitud - longDisplay), (longitud - longDisplay))
+                Display.Text = nuevoResultado
+            Else
+                Label1.Show()
+                Label2.Show()
+                Label1.Text = Display.TextLength - longDisplay
+            End If
         Else
             Label2.Hide()
             Label1.Hide()
@@ -272,10 +267,11 @@
     End Sub
 
     Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeToolStripMenuItem.Click
-        Ayuda2.LabelAyuda.Text = "Calculadora version 5.0.0
+        Ayuda2.LabelAyuda.Text = "Calculadora version 5.0.1
+https://github.com/jrodriguezballester/Calculadora.git
 Lenguaje: Visual Basic
 Autor: Jose Rodriguez"
-        Ayuda2.Size = New Size(300, 200)
+        Ayuda2.Size = New Size(540, 250)
         Ayuda2.ShowDialog()
     End Sub
 
@@ -283,5 +279,7 @@ Autor: Jose Rodriguez"
         Size = New Size(330, 375)
     End Sub
 
-
+    Private Sub AyudaOperacionTantoPorCienMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaOperacionTantoPorCienMenuItem.Click
+        Ayuda.Show()
+    End Sub
 End Class

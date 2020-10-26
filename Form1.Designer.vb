@@ -50,7 +50,7 @@ Partial Class Form1
         Me.CientificaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PantallaLlenaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OperacionConToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaOperacionTantoPorCienMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ButtonFactorial = New System.Windows.Forms.Button()
         Me.ButtonX_ElevadoY = New System.Windows.Forms.Button()
@@ -72,10 +72,10 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(9, 94)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Location = New System.Drawing.Point(12, 116)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(49, 42)
+        Me.Button1.Size = New System.Drawing.Size(65, 52)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -83,10 +83,10 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(62, 95)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Location = New System.Drawing.Point(83, 117)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(49, 42)
+        Me.Button2.Size = New System.Drawing.Size(65, 52)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "2"
         Me.Button2.UseVisualStyleBackColor = True
@@ -94,10 +94,10 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(116, 95)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button3.Location = New System.Drawing.Point(155, 117)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(49, 42)
+        Me.Button3.Size = New System.Drawing.Size(65, 52)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "3"
         Me.Button3.UseVisualStyleBackColor = True
@@ -105,10 +105,10 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(9, 140)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button4.Location = New System.Drawing.Point(12, 172)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(49, 42)
+        Me.Button4.Size = New System.Drawing.Size(65, 52)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "4"
         Me.Button4.UseVisualStyleBackColor = True
@@ -116,10 +116,10 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(62, 141)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button5.Location = New System.Drawing.Point(83, 174)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(49, 42)
+        Me.Button5.Size = New System.Drawing.Size(65, 52)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "5"
         Me.Button5.UseVisualStyleBackColor = True
@@ -127,10 +127,10 @@ Partial Class Form1
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(116, 141)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button6.Location = New System.Drawing.Point(155, 174)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(49, 42)
+        Me.Button6.Size = New System.Drawing.Size(65, 52)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "6"
         Me.Button6.UseVisualStyleBackColor = True
@@ -138,10 +138,10 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(9, 185)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button7.Location = New System.Drawing.Point(12, 228)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(49, 42)
+        Me.Button7.Size = New System.Drawing.Size(65, 52)
         Me.Button7.TabIndex = 6
         Me.Button7.Text = "7"
         Me.Button7.UseVisualStyleBackColor = True
@@ -149,10 +149,10 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(62, 186)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button8.Location = New System.Drawing.Point(83, 229)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(49, 42)
+        Me.Button8.Size = New System.Drawing.Size(65, 52)
         Me.Button8.TabIndex = 7
         Me.Button8.Text = "8"
         Me.Button8.UseVisualStyleBackColor = True
@@ -160,10 +160,10 @@ Partial Class Form1
         'Button9
         '
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(116, 186)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button9.Location = New System.Drawing.Point(155, 229)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(49, 42)
+        Me.Button9.Size = New System.Drawing.Size(65, 52)
         Me.Button9.TabIndex = 8
         Me.Button9.Text = "9"
         Me.Button9.UseVisualStyleBackColor = True
@@ -171,10 +171,10 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(62, 232)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button10.Location = New System.Drawing.Point(83, 286)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(49, 42)
+        Me.Button10.Size = New System.Drawing.Size(65, 52)
         Me.Button10.TabIndex = 9
         Me.Button10.Text = "0"
         Me.Button10.UseVisualStyleBackColor = True
@@ -182,10 +182,10 @@ Partial Class Form1
         'Punto
         '
         Me.Punto.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Punto.Location = New System.Drawing.Point(9, 231)
-        Me.Punto.Margin = New System.Windows.Forms.Padding(2)
+        Me.Punto.Location = New System.Drawing.Point(12, 284)
+        Me.Punto.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Punto.Name = "Punto"
-        Me.Punto.Size = New System.Drawing.Size(49, 42)
+        Me.Punto.Size = New System.Drawing.Size(65, 52)
         Me.Punto.TabIndex = 10
         Me.Punto.Text = "."
         Me.Punto.UseVisualStyleBackColor = True
@@ -197,10 +197,10 @@ Partial Class Form1
         Me.Button_C.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.Button_C.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
         Me.Button_C.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_C.Location = New System.Drawing.Point(239, 277)
-        Me.Button_C.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button_C.Location = New System.Drawing.Point(319, 341)
+        Me.Button_C.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button_C.Name = "Button_C"
-        Me.Button_C.Size = New System.Drawing.Size(66, 52)
+        Me.Button_C.Size = New System.Drawing.Size(88, 64)
         Me.Button_C.TabIndex = 11
         Me.Button_C.Text = "C"
         Me.Button_C.UseVisualStyleBackColor = False
@@ -208,10 +208,10 @@ Partial Class Form1
         'ButtonDivision
         '
         Me.ButtonDivision.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDivision.Location = New System.Drawing.Point(169, 140)
-        Me.ButtonDivision.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonDivision.Location = New System.Drawing.Point(225, 172)
+        Me.ButtonDivision.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonDivision.Name = "ButtonDivision"
-        Me.ButtonDivision.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonDivision.Size = New System.Drawing.Size(88, 52)
         Me.ButtonDivision.TabIndex = 15
         Me.ButtonDivision.Text = "/"
         Me.ButtonDivision.UseVisualStyleBackColor = True
@@ -219,10 +219,10 @@ Partial Class Form1
         'ButtonMultiplicacion
         '
         Me.ButtonMultiplicacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMultiplicacion.Location = New System.Drawing.Point(169, 94)
-        Me.ButtonMultiplicacion.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonMultiplicacion.Location = New System.Drawing.Point(225, 116)
+        Me.ButtonMultiplicacion.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonMultiplicacion.Name = "ButtonMultiplicacion"
-        Me.ButtonMultiplicacion.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonMultiplicacion.Size = New System.Drawing.Size(88, 52)
         Me.ButtonMultiplicacion.TabIndex = 14
         Me.ButtonMultiplicacion.Text = "*"
         Me.ButtonMultiplicacion.UseVisualStyleBackColor = True
@@ -230,10 +230,10 @@ Partial Class Form1
         'ButtonResta
         '
         Me.ButtonResta.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonResta.Location = New System.Drawing.Point(169, 232)
-        Me.ButtonResta.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonResta.Location = New System.Drawing.Point(225, 286)
+        Me.ButtonResta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonResta.Name = "ButtonResta"
-        Me.ButtonResta.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonResta.Size = New System.Drawing.Size(88, 52)
         Me.ButtonResta.TabIndex = 13
         Me.ButtonResta.Text = "-"
         Me.ButtonResta.UseVisualStyleBackColor = True
@@ -241,10 +241,10 @@ Partial Class Form1
         'ButtonIgual
         '
         Me.ButtonIgual.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonIgual.Location = New System.Drawing.Point(9, 277)
-        Me.ButtonIgual.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonIgual.Location = New System.Drawing.Point(12, 341)
+        Me.ButtonIgual.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonIgual.Name = "ButtonIgual"
-        Me.ButtonIgual.Size = New System.Drawing.Size(226, 52)
+        Me.ButtonIgual.Size = New System.Drawing.Size(301, 64)
         Me.ButtonIgual.TabIndex = 19
         Me.ButtonIgual.Text = "="
         Me.ButtonIgual.UseVisualStyleBackColor = True
@@ -252,10 +252,10 @@ Partial Class Form1
         'ButtonPorcentaje
         '
         Me.ButtonPorcentaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonPorcentaje.Location = New System.Drawing.Point(239, 94)
-        Me.ButtonPorcentaje.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonPorcentaje.Location = New System.Drawing.Point(319, 116)
+        Me.ButtonPorcentaje.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonPorcentaje.Name = "ButtonPorcentaje"
-        Me.ButtonPorcentaje.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonPorcentaje.Size = New System.Drawing.Size(88, 52)
         Me.ButtonPorcentaje.TabIndex = 18
         Me.ButtonPorcentaje.Text = "%"
         Me.ButtonPorcentaje.UseVisualStyleBackColor = True
@@ -263,10 +263,10 @@ Partial Class Form1
         'ButtonMasMenos
         '
         Me.ButtonMasMenos.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonMasMenos.Location = New System.Drawing.Point(116, 232)
-        Me.ButtonMasMenos.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonMasMenos.Location = New System.Drawing.Point(155, 286)
+        Me.ButtonMasMenos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonMasMenos.Name = "ButtonMasMenos"
-        Me.ButtonMasMenos.Size = New System.Drawing.Size(49, 42)
+        Me.ButtonMasMenos.Size = New System.Drawing.Size(65, 52)
         Me.ButtonMasMenos.TabIndex = 17
         Me.ButtonMasMenos.Text = "±"
         Me.ButtonMasMenos.UseVisualStyleBackColor = True
@@ -278,10 +278,10 @@ Partial Class Form1
         Me.Button_CE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.Button_CE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
         Me.Button_CE.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_CE.Location = New System.Drawing.Point(239, 185)
-        Me.Button_CE.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button_CE.Location = New System.Drawing.Point(319, 228)
+        Me.Button_CE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button_CE.Name = "Button_CE"
-        Me.Button_CE.Size = New System.Drawing.Size(66, 42)
+        Me.Button_CE.Size = New System.Drawing.Size(88, 52)
         Me.Button_CE.TabIndex = 16
         Me.Button_CE.Text = "←"
         Me.Button_CE.UseVisualStyleBackColor = False
@@ -289,10 +289,10 @@ Partial Class Form1
         'Display
         '
         Me.Display.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Display.Location = New System.Drawing.Point(9, 40)
-        Me.Display.Margin = New System.Windows.Forms.Padding(2)
+        Me.Display.Location = New System.Drawing.Point(12, 49)
+        Me.Display.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Display.Name = "Display"
-        Me.Display.Size = New System.Drawing.Size(227, 35)
+        Me.Display.Size = New System.Drawing.Size(301, 41)
         Me.Display.TabIndex = 20
         Me.Display.Text = "0"
         Me.Display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -300,10 +300,10 @@ Partial Class Form1
         'ButtonSumar
         '
         Me.ButtonSumar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSumar.Location = New System.Drawing.Point(169, 186)
-        Me.ButtonSumar.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonSumar.Location = New System.Drawing.Point(225, 229)
+        Me.ButtonSumar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonSumar.Name = "ButtonSumar"
-        Me.ButtonSumar.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonSumar.Size = New System.Drawing.Size(88, 52)
         Me.ButtonSumar.TabIndex = 23
         Me.ButtonSumar.Text = "+"
         Me.ButtonSumar.UseVisualStyleBackColor = True
@@ -311,10 +311,10 @@ Partial Class Form1
         'ButtonInversa
         '
         Me.ButtonInversa.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonInversa.Location = New System.Drawing.Point(239, 140)
-        Me.ButtonInversa.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonInversa.Location = New System.Drawing.Point(319, 172)
+        Me.ButtonInversa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonInversa.Name = "ButtonInversa"
-        Me.ButtonInversa.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonInversa.Size = New System.Drawing.Size(88, 52)
         Me.ButtonInversa.TabIndex = 24
         Me.ButtonInversa.Text = "1/x"
         Me.ButtonInversa.UseVisualStyleBackColor = True
@@ -325,8 +325,8 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VistaToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(449, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(599, 28)
         Me.MenuStrip1.TabIndex = 25
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -334,54 +334,54 @@ Partial Class Form1
         '
         Me.VistaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StandardToolStripMenuItem, Me.CientificaToolStripMenuItem})
         Me.VistaToolStripMenuItem.Name = "VistaToolStripMenuItem"
-        Me.VistaToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.VistaToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
         Me.VistaToolStripMenuItem.Text = "Vista"
         '
         'StandardToolStripMenuItem
         '
         Me.StandardToolStripMenuItem.Name = "StandardToolStripMenuItem"
-        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.StandardToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.StandardToolStripMenuItem.Text = "Standard"
         '
         'CientificaToolStripMenuItem
         '
         Me.CientificaToolStripMenuItem.Name = "CientificaToolStripMenuItem"
-        Me.CientificaToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.CientificaToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.CientificaToolStripMenuItem.Text = "Cientifica"
         '
         'AyudaToolStripMenuItem
         '
         Me.AyudaToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PantallaLlenaToolStripMenuItem, Me.OperacionConToolStripMenuItem, Me.AcercaDeToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PantallaLlenaToolStripMenuItem, Me.AyudaOperacionTantoPorCienMenuItem, Me.AcercaDeToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
         Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'PantallaLlenaToolStripMenuItem
         '
         Me.PantallaLlenaToolStripMenuItem.Name = "PantallaLlenaToolStripMenuItem"
-        Me.PantallaLlenaToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.PantallaLlenaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.PantallaLlenaToolStripMenuItem.Text = "Pantalla llena"
         '
-        'OperacionConToolStripMenuItem
+        'AyudaOperacionTantoPorCienMenuItem
         '
-        Me.OperacionConToolStripMenuItem.Name = "OperacionConToolStripMenuItem"
-        Me.OperacionConToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
-        Me.OperacionConToolStripMenuItem.Text = "Operacion con %"
+        Me.AyudaOperacionTantoPorCienMenuItem.Name = "AyudaOperacionTantoPorCienMenuItem"
+        Me.AyudaOperacionTantoPorCienMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AyudaOperacionTantoPorCienMenuItem.Text = "Operacion con %"
         '
         'AcercaDeToolStripMenuItem
         '
         Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
-        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.AcercaDeToolStripMenuItem.Text = "Acerca de "
         '
         'ButtonFactorial
         '
         Me.ButtonFactorial.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonFactorial.Location = New System.Drawing.Point(310, 285)
-        Me.ButtonFactorial.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonFactorial.Location = New System.Drawing.Point(413, 351)
+        Me.ButtonFactorial.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonFactorial.Name = "ButtonFactorial"
-        Me.ButtonFactorial.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonFactorial.Size = New System.Drawing.Size(88, 52)
         Me.ButtonFactorial.TabIndex = 29
         Me.ButtonFactorial.Text = "n!"
         Me.ButtonFactorial.UseVisualStyleBackColor = True
@@ -389,10 +389,10 @@ Partial Class Form1
         'ButtonX_ElevadoY
         '
         Me.ButtonX_ElevadoY.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonX_ElevadoY.Location = New System.Drawing.Point(310, 239)
-        Me.ButtonX_ElevadoY.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonX_ElevadoY.Location = New System.Drawing.Point(413, 294)
+        Me.ButtonX_ElevadoY.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonX_ElevadoY.Name = "ButtonX_ElevadoY"
-        Me.ButtonX_ElevadoY.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonX_ElevadoY.Size = New System.Drawing.Size(88, 52)
         Me.ButtonX_ElevadoY.TabIndex = 28
         Me.ButtonX_ElevadoY.Text = "x^y"
         Me.ButtonX_ElevadoY.UseVisualStyleBackColor = True
@@ -400,10 +400,10 @@ Partial Class Form1
         'ButtonCubo
         '
         Me.ButtonCubo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonCubo.Location = New System.Drawing.Point(380, 238)
-        Me.ButtonCubo.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonCubo.Location = New System.Drawing.Point(507, 293)
+        Me.ButtonCubo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonCubo.Name = "ButtonCubo"
-        Me.ButtonCubo.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonCubo.Size = New System.Drawing.Size(88, 52)
         Me.ButtonCubo.TabIndex = 27
         Me.ButtonCubo.Text = "x^3"
         Me.ButtonCubo.UseVisualStyleBackColor = True
@@ -411,10 +411,10 @@ Partial Class Form1
         'ButtonCuadrado
         '
         Me.ButtonCuadrado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonCuadrado.Location = New System.Drawing.Point(380, 284)
-        Me.ButtonCuadrado.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonCuadrado.Location = New System.Drawing.Point(507, 350)
+        Me.ButtonCuadrado.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonCuadrado.Name = "ButtonCuadrado"
-        Me.ButtonCuadrado.Size = New System.Drawing.Size(66, 42)
+        Me.ButtonCuadrado.Size = New System.Drawing.Size(88, 52)
         Me.ButtonCuadrado.TabIndex = 26
         Me.ButtonCuadrado.Text = "x^2"
         Me.ButtonCuadrado.UseVisualStyleBackColor = True
@@ -422,10 +422,10 @@ Partial Class Form1
         'Button11
         '
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(310, 186)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button11.Location = New System.Drawing.Point(413, 229)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(66, 42)
+        Me.Button11.Size = New System.Drawing.Size(88, 52)
         Me.Button11.TabIndex = 32
         Me.Button11.Text = "tan"
         Me.Button11.UseVisualStyleBackColor = True
@@ -433,10 +433,10 @@ Partial Class Form1
         'Button12
         '
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(310, 140)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button12.Location = New System.Drawing.Point(413, 172)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(66, 42)
+        Me.Button12.Size = New System.Drawing.Size(88, 52)
         Me.Button12.TabIndex = 31
         Me.Button12.Text = "cos"
         Me.Button12.UseVisualStyleBackColor = True
@@ -444,10 +444,10 @@ Partial Class Form1
         'Button13
         '
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(310, 94)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button13.Location = New System.Drawing.Point(413, 116)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(66, 42)
+        Me.Button13.Size = New System.Drawing.Size(88, 52)
         Me.Button13.TabIndex = 30
         Me.Button13.Text = "sen"
         Me.Button13.UseVisualStyleBackColor = True
@@ -459,10 +459,10 @@ Partial Class Form1
         Me.Button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.Button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
         Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.Location = New System.Drawing.Point(239, 231)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button14.Location = New System.Drawing.Point(319, 284)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(66, 42)
+        Me.Button14.Size = New System.Drawing.Size(88, 52)
         Me.Button14.TabIndex = 33
         Me.Button14.Text = "CE"
         Me.Button14.UseVisualStyleBackColor = False
@@ -470,9 +470,10 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(274, 40)
+        Me.Label1.Location = New System.Drawing.Point(365, 49)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(13, 13)
+        Me.Label1.Size = New System.Drawing.Size(16, 17)
         Me.Label1.TabIndex = 34
         Me.Label1.Text = "1"
         '
@@ -480,19 +481,20 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(241, 47)
+        Me.Label2.Location = New System.Drawing.Point(321, 58)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 24)
+        Me.Label2.Size = New System.Drawing.Size(49, 29)
         Me.Label2.TabIndex = 35
         Me.Label2.Text = "*10"
         '
         'Button15
         '
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(380, 186)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button15.Location = New System.Drawing.Point(507, 229)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(66, 42)
+        Me.Button15.Size = New System.Drawing.Size(88, 52)
         Me.Button15.TabIndex = 38
         Me.Button15.Text = "tan–¹"
         Me.Button15.UseVisualStyleBackColor = True
@@ -500,10 +502,10 @@ Partial Class Form1
         'Button16
         '
         Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(380, 140)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button16.Location = New System.Drawing.Point(507, 172)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(66, 42)
+        Me.Button16.Size = New System.Drawing.Size(88, 52)
         Me.Button16.TabIndex = 37
         Me.Button16.Text = "cos–¹"
         Me.Button16.UseVisualStyleBackColor = True
@@ -511,10 +513,10 @@ Partial Class Form1
         'Button17
         '
         Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button17.Location = New System.Drawing.Point(380, 94)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button17.Location = New System.Drawing.Point(507, 116)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(66, 42)
+        Me.Button17.Size = New System.Drawing.Size(88, 52)
         Me.Button17.TabIndex = 36
         Me.Button17.Text = "sen–¹"
         Me.Button17.UseVisualStyleBackColor = True
@@ -522,19 +524,19 @@ Partial Class Form1
         'ButtonVistaStandard
         '
         Me.ButtonVistaStandard.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonVistaStandard.Location = New System.Drawing.Point(310, 40)
-        Me.ButtonVistaStandard.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonVistaStandard.Location = New System.Drawing.Point(413, 49)
+        Me.ButtonVistaStandard.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonVistaStandard.Name = "ButtonVistaStandard"
-        Me.ButtonVistaStandard.Size = New System.Drawing.Size(136, 35)
+        Me.ButtonVistaStandard.Size = New System.Drawing.Size(181, 43)
         Me.ButtonVistaStandard.TabIndex = 39
         Me.ButtonVistaStandard.Text = "Vista Standard"
         Me.ButtonVistaStandard.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(449, 333)
+        Me.ClientSize = New System.Drawing.Size(599, 410)
         Me.Controls.Add(Me.ButtonVistaStandard)
         Me.Controls.Add(Me.Button15)
         Me.Controls.Add(Me.Button16)
@@ -574,7 +576,7 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "Calculadora"
@@ -620,7 +622,7 @@ Partial Class Form1
     Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OperacionConToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AyudaOperacionTantoPorCienMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents PantallaLlenaToolStripMenuItem As ToolStripMenuItem

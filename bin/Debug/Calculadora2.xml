@@ -27,16 +27,16 @@ Calculadora2
  Método para permitir concatenar texto (numeros) en el display
  </summary>
 </member>
-<member name="M:Calculadora2.Form1.GuardarOperacion(System.String)">
- <summary>
+<member name="M:Calculadora2.Form1.GuardarPrimerOperando(System.String)">
+ <summary>Guarda el primer operador sino es un numero guarda 0
  Si ya habia una operacion pendiente la calcula.
- Guarda el primer operador (numero) 
+ Guarda la operacion que ha llamado al metodo
  </summary>
  <param name="operador"></param>
 </member>
 <member name="M:Calculadora2.Form1.CalcularOperacion">
- <summary>
- Obtiene el segundo operador y realiza la operacion
+ <summary> Calcula las operaciones que necesitan dos operandos
+ Obtiene el segundo operador y realiza la operacion (caso expecial el %)
  </summary>
 </member>
 <member name="M:Calculadora2.Form1.Calculadora_Load(System.Object,System.EventArgs)">
@@ -48,23 +48,30 @@ Calculadora2
 </member>
 <member name="M:Calculadora2.Form1.Numeros_click(System.Object,System.EventArgs)">
  <summary>
- Botones de los Numeros con el evento click
+ Insercion de los Numeros en el display
  </summary>
  <param name="sender"></param>
  <param name="e"></param>
 </member>
 <member name="M:Calculadora2.Form1.Operacion_dos_operandos_click(System.Object,System.EventArgs)">
  <summary>
- Metodo asignado a las operaciones que necesitan dos numeros como por ejemplo: a + b
- 
+ Metodo asignado a los operadores que necesitan dos numeros como por ejemplo: a + b
  </summary>
  <param name="sender"></param>
  <param name="e"></param>
 </member>
 <member name="M:Calculadora2.Form1.Operacion_un_operando_click(System.Object,System.EventArgs)">
  <summary>
- Método asignado a los botones que solo necesitan un numero (o el display) por ejemplo: seno de x ;
+ Método asignado a los operadores que solo necesitan un numero por ejemplo: seno de x ;
  dan el resultado en pantalla sin necesidad de apretar otro boton
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Calculadora2.Form1.Maxcaracter(System.Object,System.EventArgs)">
+ <summary>
+ Comprueba si el resultado entra en el display, Si el resultado contiene E (numeros muy pequeños)
+ acorta el numero para que se pueda ver el exponente 
  </summary>
  <param name="sender"></param>
  <param name="e"></param>

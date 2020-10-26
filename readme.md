@@ -37,3 +37,15 @@ Añadir un menu para vista de calculadora cientifica con las operaciones x^2, x^
 3) Correcion del calculo del %
 
 ![Screenshot](CaptAyuda.png)
+
+## Version 5.0.1
+
+1) Modificacion del diseño
+![Screenshot](capCal1.png) ![Screenshot](capCal2.png)
+2) Añadido opciones ayuda
+![Screenshot](capCal3.png) ![Screenshot](capCal4.png)
+3) Añadido operaciones inversas de seno, coseno, tangente en grados
+4) Añadido en Display "vea ayuda" cuando se opera mal con el %
+5) Controlado cuando el Display sobrepasa los digitos en numeros con Exponente
+6) Controlado cuando en el Display se introducen letras
+7) Documentados los principales metodos
